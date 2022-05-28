@@ -9,6 +9,7 @@
 - [How it works](#how-it-works)
 - [What can it do](#what-can-it-do)
 - [Features](#features)
+- [Installation](#installation)
 - [Config](#config)
 
 
