@@ -1,0 +1,33 @@
+# Output format, supported only txt currently 
+outputType: txt
+
+# Where write results to
+outputName: result.txt
+
+# the Proxy URL which scraper will use, support HTTP/SOCKS protocol, keep it empty if not use proxy
+proxyUrl: 
+
+# The maximum number of coroutine
+maxWorkers: 10
+
+# The HTTP headers which will be using by scraper
+headers:
+  User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36
+
+# Target sites for scraping
+## url: web url
+## type: Regex or xpath(supported version for selector: 1.0/2.0/3.0), Every result for matched will have saved to total results
+## match: Expression of xpath or regex
+sources:
+  -
+    url: https://cdn.staticaly.com/gh/XIU2/TrackersListCollection/master/all.txt
+    type: regex
+    match: ^[^\n]+
+  -
+    url: https://www.yaozuopan.top/index.php/archives/1014/
+    type: xpath
+    match: //tr/td[2]/string()
+  - 
+    url: https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt
+    type: regex
+    match: ^[^\n]+

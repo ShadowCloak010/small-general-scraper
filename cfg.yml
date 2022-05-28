@@ -1,0 +1,6 @@
+outputType: txt
+outputName: result.txt
+proxyUrl: 
+maxWorkers: 10
+headers:
+sources:
